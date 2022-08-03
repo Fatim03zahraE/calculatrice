@@ -5,7 +5,7 @@
 int main()
 {
     float A,B;
-    char op,ch;
+    char op;
    do{
         printf("\nEntrer le premier nombre\n");
      scanf("%f",&A);
