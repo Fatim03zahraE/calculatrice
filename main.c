@@ -30,7 +30,7 @@ int main()
             printf("%f/%f =%f",A,B,A/B);
         }
         else{
-           printf("erreur");
+           printf("error");
         }
         break;
     default:
