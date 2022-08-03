@@ -25,7 +25,7 @@ int main()
         printf("%f*%f =%f",A,B,A*B);
         break;
     case '/':
-        if(A!=0)
+        if(B!=0)
         {
             printf("%f/%f =%f",A,B,A/B);
         }
