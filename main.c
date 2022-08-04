@@ -1,20 +1,28 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include<string.h>
 
 int main()
 {
-    float A,B;
-    char op;
-    printf("si vous voulez quitter cliquer sur q");
-   do{
-        printf("\nEntrer le premier nombre\n");
+     float A,B;
+     char op,c;
+
+     do{
+    printf("\n**********************************************************************************\n");
+    printf("si vous voulez quitter cliquer sur q 'sinon' entrer un autre caractere pour continue:\n");
+    printf("**************************************************************************************\n");
+    scanf("\n%c",&c);
+     if(c!='q'){
+    printf("--------------------------------------------------------------------\n");
+     printf("\nEntrer le premier nombre\n");
      scanf("%f",&A);
+    printf("--------------------------------------------------------------------\n");
      printf("Entrer le deuxieme  nombre\n");
      scanf("%f",&B);
-     printf("Entrer un operateur\n");
-     scanf("%s",&op);
-     switch(op)
+    printf("--------------------------------------------------------------------\n");
+     printf("Entrer un operateur **pour la soustraction(-)**pour l'addition(+)**pour la division(/)**pour le produit(*)**\n");
+     scanf("\n%c",&op);
+       printf("--------------------------------------------------------------------\n");
+    switch(op)
      {
             case '+' :
         printf("%f+%f =%f",A,B,A+B);
@@ -31,12 +39,17 @@ int main()
             printf("%f/%f =%f",A,B,A/B);
         }
         else{
-           printf("IMPOSSIBLE");
+           printf("error");
         }
         break;
-    default:
-        printf("erreur");
+    default: printf("erreur");
      }
-} while(op!='q');
-    return 0;
+     }else
+     {
+         exit(0);
+     }
+     }while(op!='q');
+
+
+return 0;
 }
