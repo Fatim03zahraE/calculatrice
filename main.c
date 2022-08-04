@@ -31,7 +31,7 @@ int main()
             printf("%f/%f =%f",A,B,A/B);
         }
         else{
-           printf("error");
+           printf("IMPOSSIBLE");
         }
         break;
     default:
